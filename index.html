@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FNaF Web Ports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FNaF Web Ports</h1>
+    </header>
+
+    <main id="game-container" class="grid-container"></main>
+
+    <div id="game-screen">
+        <div class="top-bar">
+            <span id="current-game-title">Loading...</span>
+            <div class="btn-group">
+                <button id="fs-btn" class="top-btn" onclick="toggleFullscreen()" title="Fullscreen">⛶</button>
+                <button class="top-btn" onclick="closeGame()" title="Close">✕</button>
+            </div>
+        </div>
+        <iframe id="game-frame" src=""></iframe>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
